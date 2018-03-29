@@ -21,7 +21,24 @@
           }
       }
     </style>
+    <script language="javascript">
+      var cntrl_key_pressed=false;
+      function onKeyDownHandler(e)
+      {        
+
+      }
+      function onKeyUpHandler(e)
+      {
+        if (e.ctrlKey) {
+            if (e.keyCode == 73 || e.keyCode == 73) {
+                console.log("Control Pressed");
+                e.preventDefault();
+                return false;
+            }
+        }
+      }
+    </script>
   </head>
-  <body>
+  <body onkeyup="onKeyUpHandler(event)" onkeydown="onKeyDownHandler(event)">
   </body>
 </html>
