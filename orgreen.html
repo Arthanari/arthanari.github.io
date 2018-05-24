@@ -1,33 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inheal</title>
+    <title>OrGreen</title>
     <style>
-      body {
-        animation-name: inheal;
-        animation-duration: 10s;
-        animation-iteration-count:infinite;
-      }
-      @keyframes inheal {
-          0% {
-            background-color: white;
-          }
-          40% {
-            background-color: yellowgreen;
-          }
-          100% {
-            background-color: white;
-          }
-      }
-      #info {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-      }
     </style>
     <script async src="script.js"></script>
   </head>
-  <body onkeyup="onKeyUpHandler(event)" onkeydown="onKeyDownHandler(event)">
-    <div id="info">i</div>
+  <body>
+    <ul>
+    <li>Eyes</li>
+    <li>Liver
+      <ul>
+        <li>Carrot</li>
+        <li>Tomato</li>
+      </ul>
+    </li>
+    </ul>
   </body>
 </html>
